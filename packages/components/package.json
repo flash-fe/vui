@@ -1,0 +1,34 @@
+{
+  "name": "@vui/components",
+  "version": "0.0.0",
+  "description": "basic ui components",
+  "keywords": [
+    "ui",
+    "component",
+    "vue"
+  ],
+  "author": "jqxiong <jqxiong@trip.com>",
+  "homepage": "https://github.com/flash-fe/vui#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flash-fe/vui.git"
+  },
+  "scripts": {
+    "dev": "../../node_modules/.bin/webpack-dev-server --config ./build/webpack.dev.config.js"
+  },
+  "bugs": {
+    "url": "https://github.com/flash-fe/vui/issues"
+  }
+}
