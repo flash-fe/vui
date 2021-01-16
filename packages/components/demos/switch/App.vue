@@ -8,6 +8,9 @@
             bg-color="red"
         ></v-switch>
         <p>按钮禁用</p>
+        <button
+            v-debounce:click="show"
+        >click</button>
     </div>
 </template>
 
@@ -17,6 +20,11 @@ export default {
     data() {
         return {
             checked: false
+        }
+    },
+    methods: {
+        show() {
+            console.log(this.checked)
         }
     },
     components: {

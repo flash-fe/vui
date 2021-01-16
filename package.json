@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@vui/components": "file:packages/components",
+    "@vui/directives": "file:packages/directives",
     "@vui/less": "file:packages/less",
     "vue": "^2.6.12"
   }
