@@ -7,6 +7,8 @@
     "@babel/core": "^7.12.10",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
+    "cz-customizable": "^6.3.0",
+    "html-webpack-plugin": "^4.5.1",
     "lerna": "^3.22.1",
     "less": "^4.0.0",
     "less-loader": "^7.2.0",
@@ -14,7 +16,7 @@
     "vue-loader": "^15.9.6",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.12",
-    "webpack": "^5.11.0",
+    "webpack": "^4.46.0",
     "webpack-chain": "^6.5.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
@@ -22,7 +24,15 @@
   "dependencies": {
     "@vui/components": "file:packages/components",
     "@vui/directives": "file:packages/directives",
-    "@vui/less": "file:packages/less",
-    "vue": "^2.6.12"
+    "@vui/entry": "file:packages/entry",
+    "@vui/less": "file:packages/less"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "scripts": {
+    "commit": "git cz"
   }
 }

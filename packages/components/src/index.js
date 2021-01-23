@@ -1,5 +1,5 @@
-import VSwitch from './switch'
+import Switch from './switch'
 
 export {
-    VSwitch
+    Switch
 }

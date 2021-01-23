@@ -1,6 +1,6 @@
 const WebpackChain = require('webpack-chain')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-
+const path = require('path')
 const config = new WebpackChain()
 
 
@@ -19,7 +19,7 @@ config.module
 
 config.module
     .rule('styles')
-    .test(/\.less$/)
+    .test(/\.(less|css)$/)
     // .include
     //     .add(/node_modules/)
     //     .add(/src/)
@@ -47,5 +47,9 @@ config.resolve.extensions
 .add('.js')
 .add('.vue')
 .add('.less')
+
+
+config.resolve.alias
+.set('@', path.resolve(__dirname, '..', 'packages'))
 
 module.exports = config

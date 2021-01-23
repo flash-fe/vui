@@ -21,7 +21,7 @@
 
 <script>
 export default {
-    name: 'v-switch',
+    name: 'vui-switch',
     props: {
         value: {
             type: Boolean

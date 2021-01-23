@@ -1,11 +1,11 @@
 const glob = require('glob')
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const baseConfig = require('./webpack.base.config')
+const baseConfig = require('../../../build/webpack.base.config')
 
 baseConfig.mode('production')
 
-const components = glob.sync(path.resolve(__dirname, '..', 'src', '**', '*.{vue,js}'))
+const components = glob.sync(path.resolve(__dirname, '..', 'src', '**', 'index.js'))
 
 // 配置入口
 components.forEach(file => {
