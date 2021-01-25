@@ -11,10 +11,12 @@
 </template>
 
 <script>
+
 export default {
     data() {
         return {
-            checked: false
+            checked: false,
+            Switch
         }
     }
 }
