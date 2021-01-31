@@ -8,8 +8,12 @@ const config = new WebpackChain()
 config.module
     .rule('vue')
     .test(/\.vue$/)
-    .use('vue')
-    .loader('vue-loader')
+        .use('vue')
+            .loader('vue-loader')
+            .end()
+        // 处理demo vue 编译
+        .use('vue-doc')
+            .loader(path.resolve(__dirname, '..', 'loaders', 'vue-doc-loader.js'))
 
 config.module
     .rule('js compile')

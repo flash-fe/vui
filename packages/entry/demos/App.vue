@@ -1,23 +1,16 @@
 <template>
     <div class="box" style="padding-top: 3px;">
-        <vui-switch v-model="checked" />
-        <p>checked: {{checked}}</p>
-        <vui-switch
-            :disabled="true"
-            v-model="checked"
-            bg-color="red"
-        ></vui-switch>
+        <DemoDocSwitch />
     </div>
 </template>
 
 <script>
+// 这里将成为后续的渲染模板
+import DemoDocSwitch from '@/entry/docs/switch.vue'
 
 export default {
-    data() {
-        return {
-            checked: false,
-            Switch
-        }
+    components: {
+        DemoDocSwitch
     }
 }
 </script>
